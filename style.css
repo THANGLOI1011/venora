@@ -1,0 +1,124 @@
+@import "../node_modules/bootstrap/scss/variables";
+img {
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    position: relative;
+}
+.header{
+    z-index: 5;
+    width: 100%;
+    background-color: transparent;
+}
+.header{
+    transition: all 0.5s ;
+}
+.navbar-scrolled{
+    background-color: black;
+
+}
+.kientruc{
+    display: none;
+    
+}
+
+
+
+@media only screen and (max-width: 1023px){
+   .venora{
+    display: none;
+   }
+   .kientruc{
+    display: block;
+    }
+    .loi{
+        margin:0;
+    }
+    
+}
+
+
+/* footer */
+.instagram,
+.pinterest,
+.facebook{
+    font-size: 50px;
+}
+
+.img-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container img {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    object-fit: cover;
+    transition: all 1s;
+    position: relative;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    vertical-align:middle;
+}
+
+/* Hiệu ứng khi hover vào hình ảnh */
+.img-container:hover .overlay {
+    transform: scale(1);
+}
+
+/* Lớp overlay */
+.overlay{
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+/* Tiêu đề khi hover */
+.overlay h3 {
+    position: absolute ;
+    left: 50%;
+    margin: 0px auto;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  z-index: 2;
+  color: #fff;
+  font-size: 16px;
+}
+
+.img-container:hover .overlay {
+    opacity: 1;
+  }
+  .img-container:hover .img-fluid{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+.img-container{
+    width: 100%;
+    height: 300px;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+}
