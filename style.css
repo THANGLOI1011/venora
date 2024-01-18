@@ -1,4 +1,75 @@
 @import "../node_modules/bootstrap/scss/variables";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+ @font-face {
+    font-family: 'r0c0i Linotte';
+    src: url('../font/r0c0iLinotte-Heavy.eot');
+    src: url('../font/r0c0iLinotte-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../font/r0c0iLinotte-Heavy.woff2') format('woff2'),
+        url('../font/r0c0iLinotte-Heavy.woff') format('woff'),
+        url('../font/r0c0iLinotte-Heavy.ttf') format('truetype'),
+        url('../font/r0c0iLinotte-Heavy.svg#r0c0iLinotte-Heavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+} 
+
+@font-face {
+    font-family: 'r0c0i Linotte';
+    src: url('../font/r0c0iLinotte-Bold.eot');
+    src: url('../font/r0c0iLinotte-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../font/r0c0iLinotte-Bold.woff2') format('woff2'),
+        url('../font/r0c0iLinotte-Bold.woff') format('woff'),
+        url('../font/r0c0iLinotte-Bold.ttf') format('truetype'),
+        url('../font/r0c0iLinotte-Bold.svg#r0c0iLinotte-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} 
+
+ @font-face {
+    font-family: 'r0c0i Linotte';
+    src: url('../font/r0c0iLinotte-Light.eot');
+    src: url('../font/r0c0iLinotte-Light.eot?#iefix') format('embedded-opentype'),
+        url('../font/r0c0iLinotte-Light.woff2') format('woff2'),
+        url('../font/r0c0iLinotte-Light.woff') format('woff'),
+        url('../font/r0c0iLinotte-Light.ttf') format('truetype'),
+        url('../font/r0c0iLinotte-Light.svg#r0c0iLinotte-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'r0c0i Linotte';
+    src: url('../font/r0c0iLinotte-Regular.eot');
+    src: url('../font/r0c0iLinotte-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../font/r0c0iLinotte-Regular.woff2') format('woff2'),
+        url('../font/r0c0iLinotte-Regular.woff') format('woff'),
+        url('../font/r0c0iLinotte-Regular.ttf') format('truetype'),
+        url('../font/r0c0iLinotte-Regular.svg#r0c0iLinotte-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'r0c0i Linotte';
+    src: url('../font/r0c0iLinotte-SemiBold.eot');
+    src: url('../font/r0c0iLinotte-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/r0c0iLinotte-SemiBold.woff2') format('woff2'),
+        url('../font/r0c0iLinotte-SemiBold.woff') format('woff'),
+        url('../font/r0c0iLinotte-SemiBold.ttf') format('truetype'),
+        url('../font/r0c0iLinotte-SemiBold.svg#r0c0iLinotte-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+} 
+
+
+*{
+    font-family:'Linotte',sans-serif;
+}
 img {
     width: 100vw;
     height: 100vh;
@@ -8,7 +79,7 @@ img {
     position: relative;
 }
 .header{
-    z-index: 5;
+    z-index: 100;
     width: 100%;
     background-color: transparent;
 }
@@ -23,6 +94,18 @@ img {
     display: none;
     
 }
+#icons i{
+    font-size: 33px;
+}
+.searchClub{
+    display: none;
+}
+#home{
+    color: black;
+}
+#project{
+    color: black;
+}
 
 
 
@@ -30,22 +113,68 @@ img {
    .venora{
     display: none;
    }
+   #home{
+    color: #fff;
+   }
+   #project{
+    color: #fff;
+}
+
+   .venora img{
+    max-width: 45px;
+    
+   }
    .kientruc{
     display: block;
+    margin: 0;
     }
     .loi{
         margin:0;
     }
+    .bx {
+        color: #ffffff8c;
+        font-size: 22px;
+    }
+    .align{
+        display: block;
+    }
+    #icons{
+        margin-top: 20px;
+    }
+    .hide{
+        display: block;
+    }
+    #searchIcon{
+        display: flex;
+        cursor: pointer;
+    }
     
 }
-
-
-/* footer */
-.instagram,
-.pinterest,
-.facebook{
-    font-size: 50px;
+.vip i{
+    display: none;
+    padding: 4px 12px;
 }
+#closeIcon{
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+#searchInputContainer{
+    display: none;
+    
+}
+#search{
+    border-radius: 20px;
+}
+#tryagain{
+    color: #D93025;
+    display: none;
+    font-size: 12px;
+}
+#menu{
+    font-size: 31px;
+}
+
 
 .img-container {
     overflow: hidden;
@@ -122,3 +251,17 @@ img {
     width: 100%;
     height: 100%;
 }
+.venora {
+    width: 100px;
+    z-index: 200;
+    align-items: center;
+}
+.venora img{
+    width: 75px;
+    height: auto;
+    object-fit: cover;
+}#btn{
+    border: none;
+}
+/* dịch chuyển */
+
